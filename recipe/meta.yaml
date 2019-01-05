@@ -1,6 +1,6 @@
 {% set name = "heudiconv" %}
-{% set version = "0.5.1" %}
-{% set sha256 = "ef1e2a889a2c0eb4943c965f32c58e804a3d27aa3a71ba99a97d4592379e6eea" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "4d8594b591eaeecd4707029931d57a8cb77fb262726b9026e4f778bca6b65baa" %}
 
 package:
   name: '{{ name }}'
