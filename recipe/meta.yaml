@@ -29,6 +29,7 @@ requirements:
     - pydicom
   run:
     - python
+    - bz2file
     - dcm2niix
     - dcmstack
     - nibabel
