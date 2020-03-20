@@ -18,6 +18,7 @@ build:
     - heudiconv_monitor=heudiconv.cli.monitor:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
+  skip: True  # [py<35]
 
 requirements:
   host:
