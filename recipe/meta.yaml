@@ -1,22 +1,22 @@
 {% set name = "heudiconv" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "67e1ed09fab5c9c36db9e47c25d0b488cee462de40d26bac06b90dd10dac1697" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "4e049dd062defdd30a5dd7f89497afd8d8cef9c0b554826c09d5208eaa34e168" %}
 
 package:
-  name: '{{ name }}'
-  version: '{{ version }}'
+  name: {{ name }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
-  url: 'https://github.com/nipy/heudiconv/archive/v{{ version }}.tar.gz'
-  sha256: '{{ sha256 }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://github.com/nipy/heudiconv/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   number: 0
   entry_points:
     - heudiconv=heudiconv.cli.run:main
     - heudiconv_monitor=heudiconv.cli.monitor:main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   noarch: python
 
 requirements:
@@ -51,17 +51,15 @@ about:
   home: https://github.com/nipy/heudiconv
   license: Apache 2.0
   license_family: APACHE
-  license_file: 'LICENSE'
+  license_file: LICENSE
   summary: Heuristic DICOM Converter
-  description: 'Convert DICOM dirs based on heuristic info - HeuDiConv
-    uses the dcmstack package and dcm2niix tool to convert DICOM directories or
-    tarballs into collections of NIfTI files following pre-defined heuristic(s).
-    '
-  doc_url: 'https://github.com/nipy/heudiconv'
-  dev_url: 'https://github.com/nipy/heudiconv'
+  description: 'Convert DICOM dirs based on heuristic info - HeuDiConv uses the dcmstack package and dcm2niix tool to convert DICOM directories or tarballs into collections
+    of NIfTI files following pre-defined heuristic(s). '
+  doc_url: https://github.com/nipy/heudiconv
+  dev_url: https://github.com/nipy/heudiconv
 
 extra:
   recipe-maintainers:
-    - 'kastman'
-    - 'yarikoptic'
-    - 'mgxd'
+    - kastman
+    - yarikoptic
+    - mgxd
