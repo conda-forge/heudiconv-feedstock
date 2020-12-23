@@ -5,9 +5,13 @@ Home: https://github.com/nipy/heudiconv
 
 Package license: Apache 2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/heudiconv-feedstock/blob/master/LICENSE.txt)
 
 Summary: Heuristic DICOM Converter
+
+Development: https://github.com/nipy/heudiconv
+
+Documentation: https://github.com/nipy/heudiconv
 
 Convert DICOM dirs based on heuristic info - HeuDiConv uses the dcmstack package and dcm2niix tool to convert DICOM directories or tarballs into collections of NIfTI files following pre-defined heuristic(s). 
 
