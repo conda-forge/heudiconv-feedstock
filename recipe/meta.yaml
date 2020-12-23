@@ -1,6 +1,6 @@
 {% set name = "heudiconv" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "4e049dd062defdd30a5dd7f89497afd8d8cef9c0b554826c09d5208eaa34e168" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "2fc18a67fd73058d786ca7915a2edcdf16fedb28e0d67286e479615aa68573ac" %}
 
 package:
   name: {{ name }}
@@ -53,8 +53,7 @@ about:
   license_family: APACHE
   license_file: LICENSE
   summary: Heuristic DICOM Converter
-  description: 'Convert DICOM dirs based on heuristic info - HeuDiConv uses the dcmstack package and dcm2niix tool to convert DICOM directories or tarballs into collections
-    of NIfTI files following pre-defined heuristic(s). '
+  description: 'Convert DICOM dirs based on heuristic info - HeuDiConv uses the dcmstack package and dcm2niix tool to convert DICOM directories or tarballs into collections of NIfTI files following pre-defined heuristic(s). '
   doc_url: https://github.com/nipy/heudiconv
   dev_url: https://github.com/nipy/heudiconv
 
