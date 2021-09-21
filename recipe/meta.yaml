@@ -21,14 +21,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >= 3.6
     - nibabel
     - nipype
     - pathlib
     - pip
     - pydicom
   run:
-    - python
+    - python >= 3.6
     - bz2file
     - dcm2niix
     - dcmstack
