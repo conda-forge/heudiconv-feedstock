@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - heudiconv=heudiconv.cli.run:main
     - heudiconv_monitor=heudiconv.cli.monitor:main
@@ -21,14 +21,14 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - nibabel
     - nipype
     - pathlib
     - pip
     - pydicom
   run:
-    - python
+    - python >=3.6
     - bz2file
     - dcm2niix
     - dcmstack
@@ -49,7 +49,7 @@ test:
 
 about:
   home: https://github.com/nipy/heudiconv
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: Heuristic DICOM Converter
