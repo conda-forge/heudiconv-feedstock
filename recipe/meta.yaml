@@ -1,6 +1,6 @@
 {% set name = "heudiconv" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "2fc18a67fd73058d786ca7915a2edcdf16fedb28e0d67286e479615aa68573ac" %}
+{% set version = "0.10.0" %}
+{% set sha256 = "df8ab8061c2f66912b88028bfe3ad554bb158668676bab7bbdea3145cde262dd" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   entry_points:
     - heudiconv=heudiconv.cli.run:main
     - heudiconv_monitor=heudiconv.cli.monitor:main
