@@ -27,6 +27,7 @@ requirements:
     - pathlib
     - pip
     - pydicom
+    - versioningit
   run:
     - python >=3.6
     - bz2file
