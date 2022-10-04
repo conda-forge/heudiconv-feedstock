@@ -1,6 +1,6 @@
 {% set name = "heudiconv" %}
-{% set version = "0.11.1" %}
-{% set sha256 = "7c3566787e2d165e7ea174221530b4598d06b68dbe99dbf175695103b619a7a4" %}
+{% set version = "0.11.4" %}
+{% set sha256 = "1c7de27b7bc102c9831dae6dd9c071438d91e2fc1f3814042f034092afc4b04c" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/nipy/heudiconv/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -27,6 +27,7 @@ requirements:
     - pathlib
     - pip
     - pydicom
+    - versioningit
   run:
     - python >=3.6
     - bz2file
