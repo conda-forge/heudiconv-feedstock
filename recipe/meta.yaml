@@ -22,7 +22,7 @@ build:
 requirements:
   host:
     - python >=3.9
-    - nibabel
+    - nibabel >=5.0
     - nipype
     - pathlib
     - pip
@@ -33,7 +33,7 @@ requirements:
     - bz2file
     - dcm2niix
     - dcmstack
-    - nibabel
+    - nibabel >=5.0
     - nipype
     - pathlib
     - pydicom
