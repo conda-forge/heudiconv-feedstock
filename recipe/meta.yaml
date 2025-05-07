@@ -1,6 +1,6 @@
 {% set name = "heudiconv" %}
-{% set version = "1.3.2" %}
-{% set sha256 = "cfb1daa2e84db855f5e91498e20b05f204092097e64a205550037030cd75dddb" %}
+{% set version = "1.3.3" %}
+{% set sha256 = "4a7632b13b1051a8171fc0823e036871ada5b38ed7520b84fe9243db0735b6ba" %}
 
 package:
   name: {{ name }}
@@ -21,7 +21,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
     - nibabel
     - nipype
     - pathlib
@@ -29,7 +29,7 @@ requirements:
     - pydicom
     - versioningit
   run:
-    - python >=3.6
+    - python >=3.9
     - bz2file
     - dcm2niix
     - dcmstack
