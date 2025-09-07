@@ -30,7 +30,6 @@ requirements:
     - versioningit
   run:
     - python >=3.9
-    - bz2file
     - dcm2niix
     - dcmstack
     - nibabel >=5.0
