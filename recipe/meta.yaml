@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - heudiconv=heudiconv.cli.run:main
     - heudiconv_monitor=heudiconv.cli.monitor:main
