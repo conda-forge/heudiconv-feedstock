@@ -1,6 +1,6 @@
 {% set name = "heudiconv" %}
-{% set version = "1.5.0" %}
-{% set sha256 = "3775ba9645306fb7a3670c88aefbd90413aebb2a5c848684631e974219af4b07" %}
+{% set version = "1.5.1" %}
+{% set sha256 = "10ede22a116ced4fde92e79e50af0f4627fa345715eb1a0320c0bef63b3443ca" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
