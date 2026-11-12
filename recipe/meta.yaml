@@ -1,6 +1,6 @@
 {% set name = "heudiconv" %}
-{% set version = "1.5.1" %}
-{% set sha256 = "10ede22a116ced4fde92e79e50af0f4627fa345715eb1a0320c0bef63b3443ca" %}
+{% set version = "1.6.0" %}
+{% set sha256 = "64b865c35d5b39212965fd7b5977249fcffd9f300492e46336118b60b224b3a9" %}
 
 package:
   name: {{ name }}
@@ -16,7 +16,7 @@ build:
   entry_points:
     - heudiconv=heudiconv.cli.run:main
     - heudiconv_monitor=heudiconv.cli.monitor:main
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vvv
   noarch: python
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - pathlib
     - pip
     - pydicom
+    - setuptools >=77.0.3
     - versioningit
   run:
     - python >=3.9
