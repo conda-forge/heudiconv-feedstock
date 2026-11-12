@@ -16,7 +16,7 @@ build:
   entry_points:
     - heudiconv=heudiconv.cli.run:main
     - heudiconv_monitor=heudiconv.cli.monitor:main
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation --ignore-installed --no-cache-dir -vvv
   noarch: python
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - pathlib
     - pip
     - pydicom
+    - setuptools >=77.0.3
     - versioningit
   run:
     - python >=3.9
